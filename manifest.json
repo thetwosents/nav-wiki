@@ -1,0 +1,13 @@
+ {
+  "name": "Nav Wiki",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+  "content_scripts": [
+   {
+     "matches": ["http://en.wikipedia.org/*","https://en.wikipedia.org/*"],
+     "js": ["jquery.js","gumshoe.js","wiki.js"],
+     "css": ["wiki.css"]
+   }
+ ]
+}
