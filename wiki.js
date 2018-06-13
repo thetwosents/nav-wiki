@@ -1,6 +1,10 @@
-gumshoe.init({
-  selector: '#toc a',
-});
+console.log("wiki.js test 1")
+
+// gumshoe.init({
+//   selector: '#toc a',
+// });
+
+console.log("wiki.js test 2")
 
 // // Elements
 // var el = $('h2'),
@@ -120,7 +124,7 @@ gumshoe.init({
 // separator to be adjustable 
 
 
-console.log("test")
+console.log("wiki.js test 3")
 
 function NewColumns () {
 
@@ -128,6 +132,8 @@ function NewColumns () {
   var RightColumn = document.createElement('RightColumn');
 
 }
+
+console.log("wiki.js test 4")
 
 // unsure if jquery stuff goes in the jquery.js file, or if they can live here
 
