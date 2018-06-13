@@ -1,6 +1,7 @@
 gumshoe.init({
   selector: '#toc a',
 });
+
 // // Elements
 // var el = $('h2'),
 //     menu = $('.menu li'),
@@ -110,3 +111,20 @@ gumshoe.init({
 //     }));
 
 //   };
+
+
+
+// moving the TOC (1) the NavBox (2) and the Body (3) around with jquery
+// (1) and (2) to be stacked in a left column
+// (3) to fill the right column
+// separator to be adjustable 
+
+
+
+var LeftColumn = document.createElement('LeftColumn')
+
+var RightColumn = document.createElement('RightColumn')
+
+jQuery("#TOC").detach().appendTo('LeftColumn')
+
+jQuery("#NavBox").detach().appendTo('LeftColumn')

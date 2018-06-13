@@ -1,3 +1,5 @@
+/*
+
 .active a {
   color: purple !important;
   font-weight: bold;
@@ -11,7 +13,7 @@
 }
 
 h1,h2,h3,h4,h5 {
- border-bottom: 0px;   
+ border-bottom: 0px;
 }
 h2 {
     margin-top: 120px;
@@ -20,25 +22,24 @@ h2 {
     display: none !important;
 }
 #left-navigation,#p-views {
- display: none;   
+ display: none;
 }
 .vertical-navbox {
     position: fixed;
     right: 100px;
 }
 #p-personal,#siteSub {
- display: none;   
+ display: none;
 }
 #mp-topbanner,#mp-upper,#mp-lower {
     display: none;
 }
 #right-navigation {
- margin-top: 1em;   
+ margin-top: 1em;
 }
 
 .mw-body {
  border: 0px;   
- max-width: 700px;
 }
 
 #toc {
@@ -67,7 +68,7 @@ h2 {
 }
 
 #toc ul ul li {
- font-size: 12px;   
+ font-size: 12px;
 }
 
 .mw-body {
@@ -79,3 +80,5 @@ h2 {
    top: -9999px;
    left: -9999px;
 }
+
+*/
