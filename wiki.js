@@ -120,10 +120,16 @@ gumshoe.init({
 // separator to be adjustable 
 
 
+console.log("uh this should work")
 
-var LeftColumn = document.createElement('LeftColumn')
+function NewColumns () {
 
-var RightColumn = document.createElement('RightColumn')
+  var LeftColumn = document.createElement('LeftColumn');
+  var RightColumn = document.createElement('RightColumn');
+
+}
+
+// unsure if jquery stuff goes in the jquery.js file, or if they can live here
 
 jQuery("#TOC").detach().appendTo('LeftColumn')
 
