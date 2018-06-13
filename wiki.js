@@ -120,7 +120,7 @@ gumshoe.init({
 // separator to be adjustable 
 
 
-console.log("uh this should work")
+console.log("test")
 
 function NewColumns () {
 
