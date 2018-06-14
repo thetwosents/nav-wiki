@@ -1,4 +1,4 @@
-/*
+
 
 .active a {
   color: purple !important;
@@ -71,9 +71,9 @@ h2 {
  font-size: 12px;
 }
 
-.mw-body {
+html body .mw-body {
     padding-left: 4em !important;
-    margin-left: 240px !important;
+    margin-left: 240px;
 }
 #mw-panel {
    position: absolute;
@@ -81,4 +81,12 @@ h2 {
    left: -9999px;
 }
 
-*/
+#split-bar {
+    background-color:black;
+    height: 100vh;
+    position: absolute;
+    right: 0px;
+    width: 6px;
+    top: 0px;
+    cursor: col-resize;
+}
