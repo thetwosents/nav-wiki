@@ -5,7 +5,7 @@
 
 $('#toc').append('<div id="split-bar"></div>');
 
-var min = 20;
+var min = 10;
 var max = 3600;
 var mainmin = 200;
 
