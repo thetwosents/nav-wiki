@@ -126,14 +126,16 @@ console.log("wiki.js test 2")
 function NewColumns () {
 
   var LeftColumn = document.createElement("LeftColumn");
-  LeftColumn.appendChild(#mw-panel);
+  LeftColumn.appendChild(n-mainpage-description);
 
   var RightColumn = document.createElement("RightColumn");
-  RightColumn.appendChild(#mw-panel)
+  RightColumn.appendChild(n-mainpage-description)
 
 }
 
 NewColumns ();
+
+Split(['#mw-head-base', '#content'])
 
 console.log("wiki.js test 3")
 
