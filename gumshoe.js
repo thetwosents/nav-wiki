@@ -426,3 +426,5 @@
   return gumshoe;
 
 }));
+
+console.log("gumshoe.js test")

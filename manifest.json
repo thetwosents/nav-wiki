@@ -6,7 +6,7 @@
   "content_scripts": [
    {
      "matches": ["http://en.wikipedia.org/*","https://en.wikipedia.org/*"],
-     "js": ["jquery.js","gumshoe.js","wiki.js"],
+     "js": ["jquery.js","./node_modules/split.js/split.min.js","gumshoe.js","wiki.js"],
      "css": ["wiki.css"]
    }
  ]
