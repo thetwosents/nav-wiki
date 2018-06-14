@@ -123,17 +123,19 @@ console.log("wiki.js test 2")
 // (3) to fill the right column
 // separator to be adjustable 
 
-
-console.log("wiki.js test 3")
-
 function NewColumns () {
 
-  var LeftColumn = document.createElement('LeftColumn');
-  var RightColumn = document.createElement('RightColumn');
+  var LeftColumn = document.createElement("LeftColumn");
+  LeftColumn.appendChild(#mw-panel);
+
+  var RightColumn = document.createElement("RightColumn");
+  RightColumn.appendChild(#mw-panel)
 
 }
 
-console.log("wiki.js test 4")
+NewColumns ();
+
+console.log("wiki.js test 3")
 
 // unsure if jquery stuff goes in the jquery.js file, or if they can live here
 
