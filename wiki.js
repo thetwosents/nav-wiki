@@ -23,3 +23,25 @@ $('#split-bar').mousedown(function (e) {
 $(document).mouseup(function (e) {
   $(document).unbind('mousemove');
 });
+
+// adding smooth scrolling when clicking links in the TOC
+
+// document.querySelectorAll('.toctext').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//       e.preventDefault();
+
+//       document.querySelector(this.getAttribute('href')).scrollIntoView({
+//           behavior: 'smooth'
+//       });
+//   });
+// });
+
+// trying it with jquery
+
+$('toctext').click(function () {
+  $('html, body').animate({
+      scrollTop: $('[toctext="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+  }, 500);
+
+  return false;
+});
