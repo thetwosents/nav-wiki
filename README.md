@@ -1,11 +1,11 @@
 # nav-wiki
 
-Improving the Information Architecture of Wikipedia.org to make it easier to traverse across topics rapidly.
+A Chrome Extension with the intent of improving the Information Architecture of Wikipedia.org to make it easier to traverse across topics rapidly.
 
-Primary intent:
+Primary features: (in progress)
 
-- Show Table of Contents as a sticky sidebar
-- Sticky header for current scroll position context
-- Show current scroll position in sidebar 
+- [x] Show Table of Contents as a sticky sidebar
+- [ ] Sticky header for current scroll position context
+- [ ] Highlight current scroll position in sidebar 
 
-![nav-wiki scrolling](https://user-images.githubusercontent.com/16139439/41426273-bd9b1bbe-6fc8-11e8-81f4-7581255a526a.gif)
+<img width="675" alt="note jun 14 2018 1" src="https://user-images.githubusercontent.com/16139439/41437732-e46d66e4-6fea-11e8-89dc-315fbf018118.png">
