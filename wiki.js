@@ -23,3 +23,15 @@ $('#split-bar').mousedown(function (e) {
 $(document).mouseup(function (e) {
   $(document).unbind('mousemove');
 });
+
+// animating scroll behavior of anchor links
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
