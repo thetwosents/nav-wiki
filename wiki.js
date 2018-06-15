@@ -3,6 +3,8 @@
 //   selector: '#toc a',
 // });
 
+// making the sidebar adjustable
+
 $('#toc').append('<div id="split-bar"></div>');
 
 var min = 10;
