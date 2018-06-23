@@ -67,13 +67,17 @@ h2 {
 }
 
 #toc ul ul {
-   overflow: visible;
+    overflow: visible;
     height: auto !important;
     margin-top: 4px;
 }
 
 #toc ul ul li {
  font-size: 12px;
+}
+
+#toc li :hover {
+    background: rgb(224, 224, 224);
 }
 
 html body .mw-body {
