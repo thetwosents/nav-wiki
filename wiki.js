@@ -43,7 +43,7 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 //   • by adding the "collapsible" class to it 
 
 
-$("div#toc.toc ul").addClass("collapsible");
+$("div#toc.toc ul toclevel-1").addClass("collapsible");
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
