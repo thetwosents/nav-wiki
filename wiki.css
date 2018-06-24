@@ -66,6 +66,10 @@ h2 {
     height: 100vh;
 }
 
+#toc ul:nth-of-type(1) :hover {
+    background: rgb(224, 224, 224);
+}
+
 #toc ul ul {
     overflow: visible;
     height: auto !important;
@@ -76,9 +80,9 @@ h2 {
  font-size: 12px;
 }
 
-#toc li :hover {
+/* #toc .toclevel-1 :hover {
     background: rgb(224, 224, 224);
-}
+} */
 
 html body .mw-body {
     padding-left: 4em !important;
