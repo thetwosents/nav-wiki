@@ -40,7 +40,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 // copied from https://www.w3schools.com/howto/howto_js_collapsible.asp
 
 // need to make .toclevel-n collapsible 
+// -- by adding the "collapsible" class to it 
 
+$("toc").click(function(){
+  $("li").addClass("collapsible");
+});
 
 var coll = document.getElementsByClassName("collapsible");
 var i;
