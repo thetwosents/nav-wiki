@@ -39,8 +39,10 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
 // copied from https://www.w3schools.com/howto/howto_js_collapsible.asp
 
-// • need to make .toclevel-n collapsible 
-//   • by adding the "collapsible" class to it 
+// need to make .toclevel-n collapsible 
+// -- by adding the "collapsible" class to it 
+// -- once i get collapsiblity working, add a new cursor selector to the collapse section like this:
+// -- https://css-tricks.com/almanac/properties/c/cursor/
 
 
 $("div#toc.toc ul toclevel-1").addClass("collapsible");
