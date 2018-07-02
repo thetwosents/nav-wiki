@@ -26,6 +26,10 @@ $(document).mouseup(function (e) {
   $(document).unbind('mousemove');
 });
 
+// need to store "x" value as a cookie to keep it on reload
+
+
+
 // animating scroll behavior of anchor links
 
 $(document).on('click', 'a[href^="#"]', function (event) {
@@ -45,22 +49,22 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 // -- https://css-tricks.com/almanac/properties/c/cursor/
 
 
-$("div#toc.toc ul toclevel-1").addClass("collapsible");
+// $("div#toc.toc ul toclevel-1").addClass("collapsible");
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
+// var coll = document.getElementsByClassName("collapsible");
+// var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+// for (i = 0; i < coll.length; i++) {
+//   coll[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var content = this.nextElementSibling;
+//     if (content.style.maxHeight){
+//       content.style.maxHeight = null;
+//     } else {
+//       content.style.maxHeight = content.scrollHeight + "px";
+//     } 
+//   });
+// }
 
 
 // copied from http://sebastien-roch.github.io/collapsible-list/demo.html
