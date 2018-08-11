@@ -7,6 +7,8 @@
 
 $('#toc').append('<div id="split-bar"></div>');
 
+// how is the default "x" set? I need to use the default "x" to position the left nav elements
+
 var min = 10;
 var max = 3600;
 var mainmin = 150;
