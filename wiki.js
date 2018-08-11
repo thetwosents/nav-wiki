@@ -29,7 +29,6 @@ $(document).mouseup(function (e) {
 // need to store "x" value as a cookie to keep it on reload
 
 
-
 // animating scroll behavior of anchor links
 
 $(document).on('click', 'a[href^="#"]', function (event) {
@@ -37,9 +36,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
   $('html, body').animate({
       scrollTop: $($.attr(this, 'href')).offset().top
-  }, 300);
+  }, 250);
 });
-
 
 // copied from https://www.w3schools.com/howto/howto_js_collapsible.asp
 
