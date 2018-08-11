@@ -27,17 +27,6 @@ h2 {
     display: none !important;
 }
 
-#left-navigation,#p-views {
- display: none;
-}
-
-#p-personal,#siteSub {
- display: none;
-}
-
-#mp-topbanner,#mp-upper,#mp-lower {
-    display: none;
-}
 
 #right-navigation {
  margin-top: 1em;
@@ -99,4 +88,8 @@ html body .mw-body {
     width: 6px;
     top: 0px;
     cursor: col-resize;
+}
+
+#left-navigation {
+    margin-left: 18em;
 }

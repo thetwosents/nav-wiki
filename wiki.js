@@ -9,7 +9,7 @@ $('#toc').append('<div id="split-bar"></div>');
 
 var min = 10;
 var max = 3600;
-var mainmin = 200;
+var mainmin = 150;
 
 $('#split-bar').mousedown(function (e) {
   e.preventDefault();
@@ -19,6 +19,7 @@ $('#split-bar').mousedown(function (e) {
       if (x > min && x < max && e.pageX < ($(window).width() - mainmin)) {  
         $('#toc').css("width", x);
         $('#content').css("margin-left", x);
+        $(`#left-navigation`).css("margin-left", x);
       }
   })
 });
