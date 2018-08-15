@@ -91,5 +91,6 @@ html body .mw-body {
 }
 
 #left-navigation {
-    padding-left: 30px;
+    margin-left: 240px;
+    padding-left: 4em !important;
 }
