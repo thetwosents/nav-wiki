@@ -20,8 +20,9 @@ $('#split-bar').mousedown(function (e) {
       var x = e.pageX - $('#toc').offset().left;
       if (x > min && x < max && e.pageX < ($(window).width() - mainmin)) {  
         $('#toc').css("width", x);
-        $('#content').css("margin-left", x);
+        $('#content').css("margin-left", x+20);
         $(`#left-navigation`).css("margin-left", x);
+        $(`#footer`).css("margin-left", x+20);
       }
   })
 });
