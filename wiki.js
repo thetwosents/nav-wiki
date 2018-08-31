@@ -32,7 +32,6 @@ $(document).mouseup(function (e) {
 
 // need to store "x" value as a cookie to keep it on reload
 
-
 // animating scroll behavior of anchor links
 
 $(document).on('click', 'a[href^="#"]', function (event) {
@@ -99,6 +98,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
  *
  * Author: Sebastien Roch - http://github.com/sebastien-roch
  */
+
+// kinda forgot what this chunk does
 
 (function ($) {
   $.fn.collapsibleList = function (headerSelector, opts) {
