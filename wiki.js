@@ -278,3 +278,16 @@ $(document).on('click', 'a[href^="#"]', function (event) {
       });
   };
 })(jQuery);
+
+// dom manipulation stuff
+
+// to move:
+// -- mw-head into new head section
+// -- mw-panel to bottom of new sidebar
+// -- content.mw-body to new body
+// -- toc.toc to the top of new sidebar
+
+jQuery('<div/>', {
+    id: 'new-header',
+    class: 'new-header-class',
+}).appendTo(':root');
