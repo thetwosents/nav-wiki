@@ -287,4 +287,4 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 // -- content.mw-body to new body
 // -- toc.toc to the top of new sidebar
 
-$("#mw-panel").appendTo("#toc ul");
+$("#mw-panel").appendTo("#toc");
