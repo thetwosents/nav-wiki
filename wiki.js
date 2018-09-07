@@ -287,7 +287,4 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 // -- content.mw-body to new body
 // -- toc.toc to the top of new sidebar
 
-jQuery('<div/>', {
-    id: 'new-header',
-    class: 'new-header-class',
-}).appendTo(':root');
+$("#mw-panel").appendTo("#toc.toc");

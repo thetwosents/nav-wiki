@@ -83,6 +83,10 @@ to the bottom of the left sidebar */
    left: -9999px;
 } */
 
+#mw-panel {
+    position: relative !important;
+}
+
 #split-bar {
     background-color:rgb(218, 218, 218);
     height: 100vh;
