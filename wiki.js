@@ -36,6 +36,15 @@ $(document).on('click', 'a[href^="#"]', function (event) {
   }, 300);
 });
 
+var panel = $('#mw-navigation #mw-panel');
+var toc = $('#toc');
+
+$(toc).append(panel);
+
+console.log($(toc));
+
+$('#toc').wrapInner('<div class="viewport"></div>');
+
 
 // copied from https://www.w3schools.com/howto/howto_js_collapsible.asp
 
