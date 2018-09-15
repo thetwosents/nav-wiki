@@ -41,9 +41,11 @@ var toc = $('#toc');
 
 $(toc).append(panel);
 
-console.log($(toc));
-
 $('#toc').wrapInner('<div class="viewport"></div>');
+
+$('.toclevel-1').click(function(){
+  $(this).find('ul').toggleClass('hide-me')
+})
 
 
 // copied from https://www.w3schools.com/howto/howto_js_collapsible.asp
