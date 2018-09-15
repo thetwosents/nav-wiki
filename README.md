@@ -1,10 +1,23 @@
 # nav-wiki
 
-A Chrome Extension with the intent of improving the Information Architecture of Wikipedia.org to make it easier to traverse across topics rapidly.
+A Chrome Extension which aims to improve the Information Architecture of Wikipedia.org by showing the table of contents on the sidebar as you scroll through a page.
 
-Primary features: (in progress)
+# Installation 
+Initial setup 
+- clone repo 
+- open `chrome://extensions`
+- on the Extensions page, enable the Develper Mode with the button in the top right
+- click `Load Unpacked` and select the directory where you cloned the repo
+- go to Wikipedia and feast on knowledge 
 
-- [x] Show Table of Contents as a sticky sidebar
+After you've made changes to the code
+- save the text file
+- click the refresh button on the extensions page
+- refresh the wikipedia page to see changes 
+
+# Main features
+
+
 - [ ] Sticky header for current scroll position context
 - [ ] Highlight current scroll position in sidebar 
 
