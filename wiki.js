@@ -11,6 +11,11 @@ var min = 10;
 var max = 3600;
 var mainmin = 200;
 
+var sidebarWidth = localStorage.getItem("sidebarWidth");
+
+$('#toc').css("width", sidebarWidth);
+$('#content').css("margin-left", sidebarWidth);
+
 $('#split-bar').mousedown(function (e) {
   e.preventDefault();
   $(document).mousemove(function (e) {
@@ -19,6 +24,8 @@ $('#split-bar').mousedown(function (e) {
       if (x > min && x < max && e.pageX < ($(window).width() - mainmin)) {  
         $('#toc').css("width", x);
         $('#content').css("margin-left", x);
+        localStorage.setItem("sidebarWidth", x);
+        console.log(localStorage.getItem("sidebarWidth"))
       }
   })
 });
