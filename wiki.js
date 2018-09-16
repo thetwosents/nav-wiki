@@ -13,6 +13,11 @@ var min = 10;
 var max = 3600;
 var mainmin = 150;
 
+var sidebarWidth = localStorage.getItem("sidebarWidth");
+
+$('#toc').css("width", sidebarWidth);
+$('#content').css("margin-left", sidebarWidth);
+
 $('#split-bar').mousedown(function (e) {
   e.preventDefault();
   $(document).mousemove(function (e) {
@@ -20,9 +25,9 @@ $('#split-bar').mousedown(function (e) {
       var x = e.pageX - $('#toc').offset().left;
       if (x > min && x < max && e.pageX < ($(window).width() - mainmin)) {  
         $('#toc').css("width", x);
-        $('#content').css("margin-left", x+20);
-        $(`#left-navigation`).css("margin-left", x);
-        $(`#footer`).css("margin-left", x+20);
+        $('#content').css("margin-left", x);
+        localStorage.setItem("sidebarWidth", x);
+        console.log(localStorage.getItem("sidebarWidth"))
       }
   })
 });
@@ -41,6 +46,24 @@ $(document).on('click', 'a[href^="#"]', function (event) {
       scrollTop: $($.attr(this, 'href')).offset().top
   }, 250);
 });
+
+var panel = $('#mw-navigation #mw-panel');
+var toc = $('#toc');
+
+$(toc).append(panel);
+
+$('#toc').wrapInner('<div class="viewport"></div>');
+
+$('.toclevel-1').click(function(event){
+  console.log($(this));
+
+  var target = $( event.target );
+  if ( target.is( "li" ) ) {
+    $(this).find('ul').toggleClass('hide-me')
+  }
+  
+});
+
 
 // copied from https://www.w3schools.com/howto/howto_js_collapsible.asp
 
