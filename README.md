@@ -6,13 +6,13 @@ A Chrome Extension which aims to improve the Information Architecture of Wikiped
 
 # Installation 
 Initial setup 
-- clone repo 
+- clone repo to your absolute favorite directory on your machine
 - open `chrome://extensions`
 - on the Extensions page, enable the Develper Mode with the button in the top right
 - click `Load Unpacked` and select the directory where you cloned the repo
 - go to Wikipedia and feast on knowledge 
 
-After you've made changes to the code
-- save the text file
+Playing with the code? Here's how to update your changes: 
+- save the text file (obviously)
 - click the refresh button on the extensions page
 - refresh the wikipedia page to see changes 
