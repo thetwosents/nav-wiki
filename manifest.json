@@ -4,10 +4,12 @@
   "description": "Build an Extension!",
   "manifest_version": 2,
   "content_scripts": [
-   {
-     "matches": ["http://en.wikipedia.org/*","https://en.wikipedia.org/*"],
+   { "matches": ["http://en.wikipedia.org/*","https://en.wikipedia.org/*"],
      "js": ["jquery.js","./node_modules/split.js/split.min.js","gumshoe.js","wiki.js"],
-     "css": ["wiki.css"]
-   }
- ]
+     "css": ["wiki.css"] }
+   ],
+   "icons": { 
+    "16": "icon16.png",
+    "48": "icon48.png",
+   "128": "icon128.png" }
 }
