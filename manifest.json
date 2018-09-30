@@ -9,7 +9,7 @@
      "css": ["wiki.css"] }
    ],
    "icons": { 
-    "16": "icon16.png",
-    "48": "icon48.png",
-   "128": "icon128.png" }
+    "16": "imgs/icon16.png",
+    "48": "imgs/icon48.png",
+   "128": "imgs/icon128.png" }
 }
