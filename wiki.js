@@ -1,7 +1,7 @@
 
-// gumshoe.init({
-//   selector: '#toc a',
-// });
+gumshoe.init({
+  selector: '#toc a',
+});
 
 // making the sidebar adjustable
 
@@ -25,13 +25,14 @@ $('#split-bar').mousedown(function (e) {
         $('#toc').css("width", x);
         $('#content').css("margin-left", x);
         localStorage.setItem("sidebarWidth", x);
-        console.log(localStorage.getItem("sidebarWidth"))
       }
   })
 });
 $(document).mouseup(function (e) {
   $(document).unbind('mousemove');
 });
+
+
 
 // animating scroll behavior of anchor links
 
@@ -51,8 +52,6 @@ $(toc).append(panel);
 $('#toc').wrapInner('<div class="viewport"></div>');
 
 $('.toclevel-1').click(function(event){
-  console.log($(this));
-
   var target = $( event.target );
   if ( target.is( "li" ) ) {
     $(this).find('ul').toggleClass('hide-me')
@@ -82,4 +81,18 @@ for (i = 0; i < coll.length; i++) {
       content.style.maxHeight = content.scrollHeight + "px";
     } 
   });
+}
+
+
+var obj = {
+  "element_tag": "a",
+  "x": 10,
+  "y": 10,
+  "user_screen_resolution": 1440
+}
+
+attachAnnotation(obj);
+
+function attachAnnotation(obj) {
+  console.log(obj);
 }
