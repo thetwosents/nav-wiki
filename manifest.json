@@ -3,14 +3,22 @@
   "version": "1.0",
   "description": "Build an Extension!",
   "manifest_version": 2,
+  // "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;",
   "content_scripts": [
    { "matches": ["http://en.wikipedia.org/*","https://en.wikipedia.org/*"],
      "js": ["jquery.js","./node_modules/split.js/split.min.js","gumshoe.js","wiki.js"],
-     "css": ["wiki.css"] }
+     "css": ["wiki.css","./styles/custom.css"] }
    ],
+  "background": {
+    "page": "background.html"
+  },
+  "permissions": [
+    "identity"
+  ],
    "icons": { 
     // "16": "imgs/icon16.png",
     // "48": "imgs/icon48.png",
    // "128": "imgs/icon128.png" 
- }
+  },
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'; connect-src 'self' wss://*.firebaseio.com;"
 }

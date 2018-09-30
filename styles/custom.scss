@@ -1,0 +1,48 @@
+html {
+	body {
+		position: relative; 
+		.nav-wiki-element {
+			z-index: 9999;
+			position: absolute;
+			p {
+				font-size: 12px;
+			}
+			.nav-wiki-note {
+				background: #fff;
+				padding: 10px;
+				border-radius: 8px;
+				width: 240px;
+				border: 2px solid #e8e8e8;
+				margin-top: 8px;
+				box-shadow: 0px 6px 20px rgba(0, 0, 0, .2);
+				-webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, .2);
+				-moz-box-shadow: 0px 6px 20px rgba(0, 0, 0, .2);
+			}
+			.circle {
+				height: 24px;
+				width: 24px;
+				border-radius: 50%;
+				background: #4286f4;
+				// box-shadow: 0px 6px 20px rgba(0, 0, 0, .2);
+				// -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, .2);
+				// -moz-box-shadow: 0px 6px 20px rgba(0, 0, 0, .2);
+			}
+		}
+		#toggleNavWiki {
+			position: fixed;
+			z-index: 9999;
+			bottom: 0px;
+			text-align: right;
+			width: 100%;
+			.circle {
+				height: 64px;
+				width: 64px;
+				border-radius: 50%;
+				background: #4286f4;
+				display: inline-block;
+				margin-right: 8px;
+				margin-bottom: 8px;
+			}
+		}
+	}
+}

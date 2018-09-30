@@ -1,7 +1,10 @@
 
-gumshoe.init({
-  selector: '#toc a',
-});
+// var config = { apiKey: "AIzaSyAVpjKpAZiIL2Ntc4cY9NuUdpAnzkodSTM", authDomain: "comments-pedia-database.firebaseapp.com", databaseURL: "https://comments-pedia-database.firebaseio.com", projectId: "comments-pedia-database", storageBucket: "comments-pedia-database.appspot.com", messagingSenderId: "878167931410" }; 
+// firebase.initializeApp(config);
+
+// gumshoe.init({
+//   selector: '#toc a',
+// });
 
 // making the sidebar adjustable
 
@@ -86,13 +89,16 @@ for (i = 0; i < coll.length; i++) {
 
 var obj = {
   "element_tag": "a",
-  "x": 10,
-  "y": 10,
+  "x": 300,
+  "y": 40,
   "user_screen_resolution": 1440
 }
+
+$('body').append('<div id="toggleNavWiki"><div class="circle"></div></div>')
 
 attachAnnotation(obj);
 
 function attachAnnotation(obj) {
-  console.log(obj);
+  $('body').append('<div id="navWiki1" class="nav-wiki-element"><div class="circle"></div><div class="nav-wiki-note"><p>This is a test for nav wiki elements</p></div></div>');
+  $('#navWiki1').css({"left": obj.x, "top": obj.y});
 }
